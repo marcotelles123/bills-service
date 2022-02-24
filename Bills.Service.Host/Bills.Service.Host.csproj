@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Map" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bills.Service.RefreshPaids.Infra\Bills.Service.RefreshPaids.Infra.csproj" />
+    <ProjectReference Include="..\BillsServiceSolution\Bills.Service.CheckReceipts.Domain\Bills.Service.CheckReceipts.Domain.csproj" />
+    <ProjectReference Include="..\BillsServiceSolution\Bills.Service.RefreshPaids.Domain\Bills.Service.RefreshPaids.Domain.csproj" />
+    <ProjectReference Include="..\BillsServiceSolution\Bills.Service.SendEmail.Domain\Bills.Service.SendEmail.Domain.csproj" />
+    <ProjectReference Include="..\BillsServiceSolution\Bills.Service.SendEmail.Infra\Bills.Service.SendEmail.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="driver\chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

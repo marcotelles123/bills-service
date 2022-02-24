@@ -1,0 +1,17 @@
+﻿--> FINALIZADO
+
+--> 25-20-2021
+	- All working, fin ways to test, using group in db, check random scores in all rounds, see in the log if the times in loops are correct and create db backups
+
+--> 20-20-2021
+	- Apparently the problem is solved, check why the current round will captured four times, in logs
+
+
+--> 19-20-2021
+	- Verify why the values did not captured, maybe something int he concatenation, try put hardcoded values, or remove the 'i'
+
+
+--> 18-20-2021
+	- Create a flag seem the message "Veja como foi" to sinalize when a game over
+	- Create a validation to not update when a game is finished
+		Check the home team, visitor team, round number and the flag if the game ended, in this case 'continue' the loop.

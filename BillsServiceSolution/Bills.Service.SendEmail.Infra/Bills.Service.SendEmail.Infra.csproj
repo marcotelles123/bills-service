@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Bills.Service.Email.Infra</RootNamespace>
+    <AssemblyName>Bills.Service.Email.Infra</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bills.Service.Common.VO\Bills.Service.Common.VO.csproj" />
+  </ItemGroup>
+
+</Project>
